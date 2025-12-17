@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bolos Saudáveis Leves</title>
+        <!-- Tailwind CSS via CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Lucide Icons -->
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Playfair+Display:wght@400;700;900&display=swap'); body { font-family: 'Inter', sans-serif; } h1, h2, h3 { font-family: 'Playfair Display', serif; } /* Custom Animations */@keyframes fade-in-up { from {  opacity: 0;  transform: translateY(20px); }  to {  opacity: 1;  transform: translateY(0); } } .animate-fade-in-up { animation: fade-in-up 0.6s ease-out forwards; } /* Carousel Styles */.carousel-container { overflow: hidden; position: relative; } .carousel-track { display: flex; transition: transform 0.5s ease-in-out; } .carousel-slide { min-width: 100%; }</style>
+    </head>
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids="" async="" defer=""></script>
+    <!-- Meta Pixel Code -->
+    <script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2337760226721041');
+fbq('track', 'PageView');
+</script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2337760226721041&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->     
+    <body class="bg-[#fdf2f8] text-stone-800 overflow-x-hidden pb-24">
+        <!-- Mobile-First Container -->
+        <div class="max-w-lg mx-auto bg-white min-h-screen shadow-2xl relative">
+            <!-- Urgency Bar -->
+            <div class="bg-[#db2777] text-white py-3 px-4 text-center text-xs font-bold tracking-wide sticky top-0 z-50 shadow-md animate-pulse">
+                ⚠️ OFERTA POR TEMPO LIMITADO: Aproveite o preço promocional agora!
+</div>
+            <!-- Hero Section -->
+            <header class="px-5 pt-8 pb-10 text-center animate-fade-in-up">
+                <h1 class="text-3xl font-black leading-tight text-[#831843] mb-2"> <span class="text-[#db2777]">Bolos Saudáveis Leves</span> </h1>
+                <p class="text-stone-600 text-lg leading-snug mb-6">
+                Descubra como fazer bolos úmidos e deliciosos em casa, sem culpa. </p>
+                <div class="relative mb-8 group cursor-pointer" onclick="scrollToOffer()">
+                    <div class="absolute inset-0 bg-pink-200 rounded-2xl rotate-3 group-hover:rotate-1 transition-transform duration-300"></div>
+                    <!-- Carousel -->
+                    <div class="carousel-container relative rounded-2xl shadow-xl border-4 border-white w-full h-64 bg-white">
+                        <div class="carousel-track" id="heroCarousel">
+                            <div class="carousel-slide">
+                                <img src="images/hero1.png" alt="Bolo de Chocolate" class="w-full h-64 object-cover">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/hero2.png" alt="Bolo de Cenoura" class="w-full h-64 object-cover">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/hero3.png" alt="Bolo de Limão" class="w-full h-64 object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-4 right-4 z-10 bg-white px-4 py-2 rounded-full shadow-lg border border-pink-100 flex flex-col items-center">
+                        <span class="text-xs text-stone-500 line-through">De R$ 47,90</span>
+                        <span class="text-xl font-black text-[#db2777]">R$ 19,90</span>
+                    </div>
+                </div>
+                <button onclick="scrollToOffer()" class="w-full h-14 text-lg font-bold uppercase tracking-wide bg-[#db2777] hover:bg-[#be185d] text-white shadow-lg shadow-pink-200 rounded-xl transition-all hover:scale-[1.02]">
+                    Sim! Quero Baixar Agora
+</button>
+                <div class="mt-3 flex justify-center gap-4 text-[10px] text-stone-400 font-medium uppercase tracking-wider">
+                    <span class="flex items-center"><i data-lucide="shield" class="w-3 h-3 mr-1"></i> Compra Segura</span>
+                    <span class="flex items-center"><i data-lucide="check" class="w-3 h-3 mr-1"></i> Acesso Imediato</span>
+                </div>
+            </header>
+            <!-- Benefits Grid -->
+            <section class="px-5 py-8 bg-[#fdf2f8]">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-pink-100 text-center">
+                        <div class="text-2xl mb-2">🌾</div>
+                        <h3 class="font-bold text-[#831843] text-sm mb-1">Sem Glúten</h3>
+                        <p class="text-xs text-stone-500">Segurança total</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-pink-100 text-center">
+                        <div class="text-2xl mb-2">🥗</div>
+                        <h3 class="font-bold text-[#831843] text-sm mb-1">Sem Culpa</h3>
+                        <p class="text-xs text-stone-500">100% Saudável</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-pink-100 text-center">
+                        <div class="text-2xl mb-2">🥛</div>
+                        <h3 class="font-bold text-[#831843] text-sm mb-1">Sem Leite</h3>
+                        <p class="text-xs text-stone-500">Zero Lactose</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-pink-100 text-center">
+                        <div class="text-2xl mb-2">⭐</div>
+                        <h3 class="font-bold text-[#831843] text-sm mb-1">Aprovado</h3>
+                        <p class="text-xs text-stone-500">+500 Alunas</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Adaptability Section -->
+            <section class="px-5 py-10 space-y-12">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl font-bold text-[#831843]">Adaptável para sua realidade</h2>
+                    <div class="w-16 h-1 bg-[#db2777] mx-auto mt-2 rounded-full"></div>
+                </div>
+                <div class="bg-white p-5 rounded-2xl shadow-lg border border-pink-50">
+                    <img src="images/eggs.png" alt="Ovos" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="bg-pink-100 p-2 rounded-lg text-xl">🥚</span>
+                        <h3 class="text-xl font-bold text-[#831843]">Com ou Sem Ovos</h3>
+                    </div>
+                    <p class="text-stone-600 leading-relaxed text-sm">
+                    Você escolhe! Receitas versáteis que funcionam perfeitamente das duas formas, garantindo a mesma textura fofinha. </p>
+                </div>
+                <div class="bg-white p-5 rounded-2xl shadow-lg border border-pink-50">
+                    <img src="images/texture_choc.png" alt="Chocolate" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="bg-pink-100 p-2 rounded-lg text-xl">🍯</span>
+                        <h3 class="text-xl font-bold text-[#831843]">Com ou Sem Açúcar</h3>
+                    </div>
+                    <p class="text-stone-600 leading-relaxed text-sm">
+                    Prefere adoçante natural? Xilitol? Demerara? Você decide o nível de doçura sem perder o ponto da massa. </p>
+                </div>
+            </section>
+            <!-- Deliverables List -->
+            <section class="px-5 py-10 bg-[#9d174d] text-white">
+                <div class="flex flex-col items-center text-center">
+                    <h2 class="text-2xl font-bold mb-6">O que você vai receber:</h2>
+                    <ul class="space-y-4 w-full text-left">
+                        <li class="flex items-center gap-3 bg-white/10 p-3 rounded-lg border border-white/10">
+                            <i data-lucide="check" class="w-5 h-5 text-pink-300 flex-shrink-0"></i>
+                            <span class="text-sm font-medium">15 Receitas Inéditas e Exclusivas</span>
+                        </li>
+                        <li class="flex items-center gap-3 bg-white/10 p-3 rounded-lg border border-white/10">
+                            <i data-lucide="check" class="w-5 h-5 text-pink-300 flex-shrink-0"></i>
+                            <span class="text-sm font-medium">Fotos reais de cada preparo</span>
+                        </li>
+                        <li class="flex items-center gap-3 bg-white/10 p-3 rounded-lg border border-white/10">
+                            <i data-lucide="check" class="w-5 h-5 text-pink-300 flex-shrink-0"></i>
+                            <span class="text-sm font-medium">Passo a passo simples e detalhado</span>
+                        </li>
+                        <li class="flex items-center gap-3 bg-white/10 p-3 rounded-lg border border-white/10">
+                            <i data-lucide="check" class="w-5 h-5 text-pink-300 flex-shrink-0"></i>
+                            <span class="text-sm font-medium">Lista de substituições inteligentes</span>
+                        </li>
+                        <li class="flex items-center gap-3 bg-white/10 p-3 rounded-lg border border-white/10">
+                            <i data-lucide="check" class="w-5 h-5 text-pink-300 flex-shrink-0"></i>
+                            <span class="text-sm font-medium">Segredos para o bolo não solar</span>
+                        </li>
+                    </ul>
+                    <button onclick="scrollToOffer()" class="w-full mt-8 h-14 text-lg font-bold bg-[#db2777] hover:bg-[#be185d] text-white rounded-xl shadow-lg border border-white/20 transition-all hover:scale-[1.02]">
+                        QUERO MEU E-BOOK AGORA
+</button>
+                    <p class="mt-3 text-xs text-pink-200 flex items-center gap-1"> <i data-lucide="shield" class="w-3 h-3"></i> Compra 100% Segura e Acesso Imediato </p>
+                </div>
+            </section>
+            <!-- Testimonials -->
+            <section class="px-5 py-10 bg-white">
+                <h2 class="text-2xl font-bold text-center mb-2 text-[#831843]">Quem fez, amou!</h2>
+                <p class="text-center text-stone-500 text-sm mb-8">Veja o que nossas alunas estão dizendo</p>
+                <div class="space-y-6">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-[#fdf2f8] p-5 rounded-xl border border-pink-100 shadow-sm">
+                        <div class="flex gap-1 mb-3 text-[#fbbf24]">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                        <p class="text-stone-700 text-sm italic mb-4">"Eu achava impossível um bolo sem glúten ficar fofinho. A receita de cenoura mudou minha vida!"</p>
+                        <div class="flex items-center gap-3">
+                            <img src="images/avatar1.png" alt="Cláudia" class="w-10 h-10 rounded-full object-cover border-2 border-pink-200">
+                            <span class="font-bold text-sm text-[#831843]">Cláudia Martins</span>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-[#fdf2f8] p-5 rounded-xl border border-pink-100 shadow-sm">
+                        <div class="flex gap-1 mb-3 text-[#fbbf24]">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                        <p class="text-stone-700 text-sm italic mb-4">"Minha filha é celíaca e eu sofria muito para fazer lanches. Esse e-book salvou meus dias."</p>
+                        <div class="flex items-center gap-3">
+                            <img src="images/avatar2.png" alt="Renata" class="w-10 h-10 rounded-full object-cover border-2 border-pink-200">
+                            <span class="font-bold text-sm text-[#831843]">Renata Gomes</span>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="bg-[#fdf2f8] p-5 rounded-xl border border-pink-100 shadow-sm">
+                        <div class="flex gap-1 mb-3 text-[#fbbf24]">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                        <p class="text-stone-700 text-sm italic mb-4">"Valeu cada centavo. Ingredientes que a gente acha no mercado da esquina e o sabor é maravilhoso."</p>
+                        <div class="flex items-center gap-3">
+                            <img src="images/avatar3.png" alt="Sônia" class="w-10 h-10 rounded-full object-cover border-2 border-pink-200">
+                            <span class="font-bold text-sm text-[#831843]">Sônia Aparecida</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <span class="bg-[#db2777]/10 text-[#db2777] px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wide">
+                    + de 500 alunas satisfeitas </span>
+                </div>
+            </section>
+            <!-- Author -->
+            <section class="px-5 py-10 bg-[#fdf2f8]">
+                <div class="text-center">
+                    <div class="relative inline-block mb-6">
+                        <div class="absolute inset-0 bg-pink-200 rounded-full blur-lg opacity-50"></div>
+                        <img src="images/author.png" alt="Autora" class="relative w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg mx-auto">
+                    </div>
+                    <h3 class="text-[#db2777] font-bold uppercase text-xs tracking-widest mb-1">Sobre a Autora</h3>
+                    <h2 class="text-2xl font-bold mb-4 text-[#831843]">Olá, eu sou a Chef Confeiteira</h2>
+                    <div class="text-stone-600 text-sm leading-relaxed space-y-4 text-left bg-white p-6 rounded-2xl shadow-sm border border-pink-50">
+                        <p>
+                        A intolerância ao glúten me ensinou a cuidar da minha saúde de uma forma nova. Quando minha filha nasceu com o mesmo diagnóstico, cozinhar deixou de ser apenas uma opção — <strong class="text-[#db2777]">virou minha missão de vida.</strong> </p>
+                        <p>
+                        Desenvolvi este método para provar que é possível sim comer um bolo delicioso, fofinho e molhadinho sem usar farinha de trigo. </p>
+                    </div>
+                </div>
+            </section>
+            <!-- FAQ (Using Details/Summary for simplicity) -->
+            <section class="px-5 py-10">
+                <h2 class="text-2xl font-bold text-center mb-8 text-[#831843]">Perguntas Frequentes</h2>
+                <div class="space-y-2">
+                    <details class="group bg-white rounded-lg shadow-sm border border-gray-100">
+                        <summary class="flex justify-between items-center font-semibold text-sm cursor-pointer p-4 list-none text-stone-800 group-open:text-[#db2777]">
+                            O bolo realmente fica gostoso?
+                            <span class="transition group-open:rotate-180"> <i data-lucide="chevron-down" class="w-4 h-4"></i> </span>
+                        </summary>
+                        <div class="text-stone-600 text-sm px-4 pb-4">
+                            Sim! Essa é a maior surpresa das nossas clientes. As técnicas garantem um bolo úmido e fofo.
+</div>
+                    </details>
+                    <details class="group bg-white rounded-lg shadow-sm border border-gray-100">
+                        <summary class="flex justify-between items-center font-semibold text-sm cursor-pointer p-4 list-none text-stone-800 group-open:text-[#db2777]">
+                            Os ingredientes são caros?
+                            <span class="transition group-open:rotate-180"> <i data-lucide="chevron-down" class="w-4 h-4"></i> </span>
+                        </summary>
+                        <div class="text-stone-600 text-sm px-4 pb-4">
+                            Não! Usamos ingredientes simples e acessíveis que você encontra em qualquer mercado.
+</div>
+                    </details>
+                    <details class="group bg-white rounded-lg shadow-sm border border-gray-100">
+                        <summary class="flex justify-between items-center font-semibold text-sm cursor-pointer p-4 list-none text-stone-800 group-open:text-[#db2777]">
+                            Preciso ser experiente?
+                            <span class="transition group-open:rotate-180"> <i data-lucide="chevron-down" class="w-4 h-4"></i> </span>
+                        </summary>
+                        <div class="text-stone-600 text-sm px-4 pb-4">
+                            De jeito nenhum! O passo a passo é desenhado para iniciantes.
+</div>
+                    </details>
+                    <details class="group bg-white rounded-lg shadow-sm border border-gray-100">
+                        <summary class="flex justify-between items-center font-semibold text-sm cursor-pointer p-4 list-none text-stone-800 group-open:text-[#db2777]">
+                            Como vou receber o livro?
+                            <span class="transition group-open:rotate-180"> <i data-lucide="chevron-down" class="w-4 h-4"></i> </span>
+                        </summary>
+                        <div class="text-stone-600 text-sm px-4 pb-4">
+                            Envio automático e imediato por e-mail após a confirmação do pagamento.
+</div>
+                    </details>
+                </div>
+            </section>
+            <!-- Guarantee -->
+            <section class="px-5 py-10 bg-[#9d174d] text-white text-center">
+                <div class="mx-auto mb-4 w-16 h-16 text-pink-300">
+                    <i data-lucide="shield" class="w-16 h-16"></i>
+                </div>
+                <h2 class="text-xl font-bold mb-3">Garantia Incondicional de 7 Dias</h2>
+                <p class="text-pink-100 text-sm leading-relaxed mb-6">
+                O risco é todo meu. Se você comprar, testar as receitas e achar que não valeu a pena, eu devolvo 100% do seu dinheiro. Sem perguntas. </p>
+            </section>
+            <!-- Final CTA -->
+            <section id="offer-section" class="px-5 py-12 text-center bg-white">
+                <h2 class="text-2xl font-black text-[#831843] mb-3 leading-tight">
+                Comece a fazer bolos incríveis hoje mesmo! </h2>
+                <p class="text-stone-600 text-sm mb-8 max-w-xs mx-auto">
+                Aproveite o preço promocional de lançamento antes que acabe. </p>
+                <div class="mb-8">
+                    <p class="text-stone-400 text-xs font-bold uppercase tracking-widest mb-1">Valor Promocional</p>
+                    <p class="text-5xl font-black text-[#db2777] tracking-tight">R$ 19,90</p>
+                </div>
+                <a href="https://pay.wiapy.com/codRe7hWxM" target="_blank" rel="noopener noreferrer" class="block w-full"> <button class="w-full h-16 text-xl font-black uppercase tracking-wide bg-[#db2777] hover:bg-[#be185d] text-white rounded-xl shadow-xl shadow-pink-200 animate-pulse transition-all hover:scale-[1.02]">
+                        SIM! QUERO BAIXAR AGORA
+</button> </a>
+                <p class="mt-4 text-xs text-stone-400 flex justify-center items-center gap-1 font-medium"> <i data-lucide="shield" class="w-3 h-3"></i> Compra 100% Segura e Acesso Imediato </p>
+            </section>
+            <!-- Footer -->
+            <footer class="text-center py-8 text-stone-400 text-xs bg-[#fdf2f8]">
+                <p class="mb-2">Copyright © 2026 – Bolos Leves</p>
+                <p>Todos os direitos reservados</p>
+            </footer>
+        </div>
+        <script src="js/script.js"></script>
+        <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+    </body>
+</html>
